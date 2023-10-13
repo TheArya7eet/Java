@@ -1,4 +1,6 @@
 public class MajorityElement {
+    // Element is the majority element if if occurs for > n/3 times (where n = length of the array)
+
     // Moore's Voting Algorithm
     private static int majorityElement(int[] arr){
         // For tracking the count of every element
