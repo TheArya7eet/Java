@@ -8,6 +8,7 @@ public class IntegerToRoman {
         return ths[num/1000] + hrns[(num%1000)/100] + tens[(num%100)/10] + ones[num%10];   
     }
     public static void main(String[] args) {
-        System.out.println(intToRoman(12));
+        int n = 11;
+        System.out.println("The Roman version of " + n + " is: " + intToRoman(n)));
     }
 }

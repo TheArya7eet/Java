@@ -34,7 +34,7 @@ public class MergeOverlappingIntervals {
         arr = MergeIntervals(arr);
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println("The overlapping intervals are :  " + Arrays.toString(arr[i]));
+            System.out.println("The Overlapping Intervals are:  " + Arrays.toString(arr[i]));
         }
     }
 }

@@ -33,6 +33,6 @@ public class DegreeOfArray{
     public static void main(String[] args) {
         int[] arr = {1, 2, 2, 3, 1, 3};
 
-        System.out.println("The shortest sub-array of the maximum occurring element is : " + findShortestSubArray(arr));
+        System.out.println("The shortest sub-array of the maximum occurring element is: " + findShortestSubArray(arr));
     }
 }

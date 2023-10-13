@@ -22,6 +22,6 @@ public class KadanesAlgorithm{
     public static void main(String[] args) {
       int[] arr = {-2, -1, -3, 4, -1, 3, -2};
 
-      System.out.println("Maximum Sub-Array Sum is : " + MaxSubArray(arr, arr.length));
+      System.out.println("The Maximum Sub-Array Sum is: " + MaxSubArray(arr, arr.length));
     }
 }

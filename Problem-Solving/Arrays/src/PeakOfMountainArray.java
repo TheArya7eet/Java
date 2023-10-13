@@ -25,6 +25,6 @@ public class PeakOfMountainArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 4, 5, 3, 2};
 
-        System.out.println(findPeakIndex(arr));
+        System.out.println("The Peak Index of the Mountain Array is: " + findPeakIndex(arr));
     }
 }
