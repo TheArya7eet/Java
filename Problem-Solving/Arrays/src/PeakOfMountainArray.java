@@ -1,5 +1,6 @@
 public class PeakOfMountainArray {
     private static int findPeakIndex(int[] arr){
+        // Intitalise two pointers, one pointing to the 0th index and the other pointing to the (n - 1)th index
         int low = 0, high = arr.length - 1;
 
         while(low < high){
