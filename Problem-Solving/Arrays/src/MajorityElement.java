@@ -19,9 +19,12 @@ public class MajorityElement {
 
             // If current element is equal to the element we are counting
             else if(element == arr[i]){
+                // Increment count by 1
                 count++;
             }
+            // Else 
             else{
+                // Decrement count by 1
                 count--;
             }
         }
