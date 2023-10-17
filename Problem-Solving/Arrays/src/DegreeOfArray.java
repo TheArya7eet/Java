@@ -3,9 +3,9 @@ import java.util.HashMap;
 public class DegreeOfArray{
     private static int findShortestSubArray(int[] arr){
         // Initialize a HashMap to store the first occurrence index of every element in the array
-        HashMap <Integer, Integer> first =new HashMap();
+        HashMap <Integer, Integer> first =new HashMap<>();
         // Initialise a HashMap to store the count (number of occurrences) of each element in the array
-        HashMap <Integer, Integer> count = new HashMap();
+        HashMap <Integer, Integer> count = new HashMap<>();
         int degree = 0;
         int minLength = 0;
 
