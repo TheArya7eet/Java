@@ -4,6 +4,8 @@ import java.util.Arrays;
 public class MergeOverlappingIntervals {
     private static int[][] MergeIntervals(int[][] arr) {
         int n = arr.length;
+
+        // Declare an ArrayList to store the merged intervals
         ArrayList<int[]> ans = new ArrayList<>();
 
         // Sort the given array
