@@ -16,10 +16,10 @@ public class PascalsTriangle2 {
             return row;
         }
 
-        // Run a loop i that will signify the columns ranging from (0 to r - 1) or (1 to r) [because in each row, there are r columns]
+        // Run a loop col that will signify the columns ranging from (0 to row index - 1) or (1 to row index) [because in each row, there are (row index + 1) or (row index) number of columns]
         for (int col = 1; col <= rowIndex; col++) {
-            // current element = previous element * (row index - column index) / (column index + 1) [columns ranging from 0 to (r - 1)]
-            // current element = previous element * (row index - column index + 1) / column index [columns ranging from 1 to r]
+            // current element = previous element * (row index - column index) / (column index + 1) [columns ranging from 0 to (row index - 1)]
+            // current element = previous element * (row index - column index + 1) / column index [columns ranging from 1 to row index]
             ans = ans * (rowIndex - col + 1);
             ans = ans / (col);
             row.add((int)ans);
