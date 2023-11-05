@@ -28,7 +28,7 @@ public class AddTwoNumbers {
             if(l1 != null){
                 // Add the value of l1 node to sum
                 sum += l1.value;
-                // Point l1 to its next node
+                // Advance l1 to its next node
                 l1 = l1.next;
             }
 
@@ -36,7 +36,7 @@ public class AddTwoNumbers {
             if(l2 != null){
                 // Add the value of l2 node to sum
                 sum += l2.value;
-                // Point l2 to its next node
+                // Advance l2 to its next node
                 l2 = l2.next;
             }
 
@@ -44,8 +44,10 @@ public class AddTwoNumbers {
             sum += carry;
             // Update value of carry
             carry = sum / 10;
+            // Create a node containing the digit value of (sum % 10) and set it to temp node's next
             Node node = new Node(sum % 10);
             temp.next = node;
+            // Advance temp node to its next node
             temp = temp.next;
         }
 

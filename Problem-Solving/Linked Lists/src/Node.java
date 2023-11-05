@@ -84,7 +84,9 @@ public class Node {
 
         // Until temp is null
         while (temp != null) {
+            // Print the current node value
             System.out.print(temp.value + " -> ");
+            // Advance temp to its next node
             temp = temp.next;
         }
 
