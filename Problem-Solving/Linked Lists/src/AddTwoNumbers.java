@@ -1,10 +1,9 @@
 public class AddTwoNumbers {
-    public static void display(Node head) {
-        // Create a temporary node which will point to the same object that head is
-        // pointing
+    private static void display(Node head) {
+        // Create a temp node pointing to head
         Node temp = head;
 
-        // Until temp is null
+        // Until temp is NULL
         while (temp != null) {
             System.out.print(temp.value + " -> ");
             temp = temp.next;
