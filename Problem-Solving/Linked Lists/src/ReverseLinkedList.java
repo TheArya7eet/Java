@@ -1,7 +1,6 @@
 public class ReverseLinkedList {
     private static void display(Node head) {
-        // Create a temporary node which will point to the same object that head is
-        // pointing
+        // Create a temporary node set to the head of LL
         Node temp = head;
 
         // Until temp is null
@@ -18,9 +17,9 @@ public class ReverseLinkedList {
         // Create a dummy node initialised with null 
         Node dummy = null;
 
-        // Until head is NULL
+        // Until head is null
         while(head != null){
-            // Create a next node pointing to head.next
+            // Create a next node set to head.next
             Node next = head.next;
             // Point the head.next to dummy node, i.e. null
             head.next = dummy;

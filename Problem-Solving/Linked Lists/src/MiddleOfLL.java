@@ -12,7 +12,7 @@ public class MiddleOfLL {
         }
 
         Node temp2 = head;
-        // Now traverse again until size / 2, and we will get our middle node
+        // Now traverse again till size / 2, and we will get our middle node
         for(int i = 1; i <= size / 2; i++){
             temp2 = temp2.next;
         }
@@ -22,7 +22,7 @@ public class MiddleOfLL {
 
     // Approach 2 - Tortoise-Hare Method
     private static Node middle2(Node head){
-        // Create two nodes both pointing to the head
+        // Create two nodes both set to the head
         Node slow = head, fast = head;
 
         while(fast != null && fast.next != null){

@@ -1,6 +1,6 @@
 public class AddTwoNumbers {
     private static void display(Node head) {
-        // Create a temp node pointing to head
+        // Create a temp node set to the head of LL
         Node temp = head;
 
         // Until temp is NULL
@@ -15,11 +15,11 @@ public class AddTwoNumbers {
     private static void addtTwoNumbers(Node l1, Node l2){
         // Create a dummy node containing the value 0
         Node dummy = new Node(0);
-        // Create a temp node pointing to dummy
+        // Create a temp node set to dummy
         Node temp = dummy;
         int carry = 0;
 
-        // If l1 is not null OR l2 is not null OR carry is 1
+        // Until l1 is null OR l2 is not null OR carry is 1
         while(l1 != null || l2 != null || carry == 1){
             int sum = 0;
 
