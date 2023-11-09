@@ -25,6 +25,7 @@ public class MiddleOfLL {
         // Create two nodes both set to the head
         Node slow = head, fast = head;
 
+        // Until the fast pointer and fast.next  is null, move the slow and fast pointers by one step and two steps respectively
         while(fast != null && fast.next != null){
             // Advance the slow to its next node
             slow = slow.next;
@@ -32,6 +33,7 @@ public class MiddleOfLL {
             fast = fast.next.next;
         }
 
+        // After the loop ends, the slow pointer is our middle node
         return slow;
     }
     public static void main(String[] args) {

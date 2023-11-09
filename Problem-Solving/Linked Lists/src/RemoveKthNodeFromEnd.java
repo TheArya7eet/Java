@@ -1,7 +1,7 @@
 public class RemoveKthNodeFromEnd {
     private static void display(Node head) {
         // Create a temporary node set to the head of LL
-        Node temp1 = head, temp2 = head;
+        Node temp1 = head;
 
         // Until temp is null
         while (temp1 != null) {
