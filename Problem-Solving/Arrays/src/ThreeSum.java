@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class ThreeSum {
 
-    // Approach 1 - Hashing
+    // Approach 1 - Using Set data structure
     private static List<List<Integer>> threeSumHashing(int[] arr){
         int n = arr.length;
 
