@@ -28,7 +28,7 @@ public class DeleteNodeFromLL {
             while(temp2.next.next != null) temp2 = temp2.next;
 
             // Set temp.next to null
-            temp2.next = null; 
+            temp2.next = null;
             return;
         }
 
