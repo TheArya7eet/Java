@@ -45,7 +45,7 @@ public class Search2dMatrix {
         int low = 0, high = size - 1;
 
         // Perform binary search 
-        while(low <= high){\
+        while(low <= high){
             // Find the mid index
             int mid  = low + (high - low) / 2;
 
