@@ -38,11 +38,12 @@ public class MiddleOfLL {
     }
     public static void main(String[] args) {
         Node head = new Node(1);
-        head.insertLast(head, 2);
         head.insertLast(head, 3);
         head.insertLast(head, 4);
+        head.insertLast(head, 7);
         head.insertLast(head, 5);
         head.insertLast(head, 6);
+        head.insertLast(head, 8);
 
         Node middle1 = middle1(head);
         Node middle2 = middle2(head);
