@@ -35,6 +35,7 @@ public class NextPermutation {
             return;
         }
 
+        // Check for the first element from the end of the array which is greater than the element at the breaking-point index
         for(int i = arr.length - 1; i > index; i--){
             // If the current element is greater than the  element at the breaking point index
             if(arr[i] > arr[index]){
@@ -48,7 +49,7 @@ public class NextPermutation {
         reverseArray(arr, index + 1, arr.length);
     }
     public static void main(String[] args) {
-        int[] arr = {3, 2, 1};
+        int[] arr = {1,4,3,2};
 
         nextPermutation(arr);
 
