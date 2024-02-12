@@ -7,7 +7,7 @@ import java.util.Set;
 public class ThreeSum {
 
     // Approach 1 - Using Set data structure
-    private static List<List<Integer>> threeSumHashing(int[] arr){
+    private static List<List<Integer>> threeSum1(int[] arr){
         int n = arr.length;
 
         // Declare a HashSet of type List<Integer> to store the unique triplets
@@ -42,7 +42,7 @@ public class ThreeSum {
     }
 
     // Approach 2 - Using two pointer
-    private static List<List<Integer>> threeSum(int[] arr){
+    private static List<List<Integer>> threeSum2(int[] arr){
         int n = arr.length;
 
         // Declare a ArrayList of type List<Integer> to store our triplets
@@ -89,6 +89,6 @@ public class ThreeSum {
     }
 
     public static void main(String[] args) {
-        System.out.println(threeSum(new int[] {-1,0,1,2,-1,-4}));
+        System.out.println(threeSum2(new int[] {1, 0, -1, 2, -1, 4}));
     }
 }
