@@ -66,7 +66,7 @@ public class LongestConsecutiveSequence {
         }
 
         // Iterate through the set to find the longest sequence
-        for(int i : set){
+        for(int i : arr){
             // If i is a starting number, i.e. set does not contain (i - 1)
             if(!set.contains(i - 1)){
                 // Declare a variable currCount to store the length of the current sequence, initialised with 0

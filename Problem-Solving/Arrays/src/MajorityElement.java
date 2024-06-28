@@ -1,5 +1,6 @@
+
 public class MajorityElement {
-    // Element is the majority element if if occurs for > n/3 times (where n = length of the array)
+    // Element is the majority element if if occurs for > n/2 times (where n = length of the array)
 
     // Moore's Voting Algorithm
     private static int majorityElement(int[] arr){
@@ -46,7 +47,8 @@ public class MajorityElement {
         return -1;
     }
     public static void main(String[] args) {
-        int[] arr = {7, 7, 5, 7, 5, 1, 5, 7, 5, 5, 7, 7, 1, 1, 1, 1};
+        // int[] arr = {7, 7, 5, 7, 5, 1, 5, 7, 5, 5, 7, 7, 1, 1, 1, 1};
+        int[] arr = {1, 1, 1, 2, 3, 4, 4, 4};
 
         System.out.println("The Majority Element is: " + majorityElement(arr));
     }

@@ -1,9 +1,31 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class MajorityElement2 {
     // Element is the majority element if if occurs for > n/3 times (where n =
     // length of the array)
+
+    // Using HashMap
+    private static ArrayList<Integer> majorityElementHashing(int[] arr){
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        int n = arr.length;
+
+        for(int i = 0; i < n; i++){
+            // Put the elements as keys and their frequencies as the values
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+        }
+
+        map.forEach((key, value) -> {
+            if(map.get(key) > n / 3) list.add(key);
+        });
+
+        return list;
+    }
+
     // Extended Boyer Moore's Voting Algorithm
     private static List<Integer> majorityElement2(int[] arr){
         int n = arr.length;
